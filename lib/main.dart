@@ -4,7 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 void main() {
   runApp(MyApp());
 }
-
+// _________________________________________________
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -14,12 +14,15 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
+// Program di atas adalah sebuah class yang merupakan turunan dari StatelessWidget. Di dalamnya, terdapat method build() yang akan mengembalikan sebuah widget MaterialApp. Widget MaterialApp ini berfungsi untuk menampilkan tampilan aplikasi yang dibangun dengan menggunakan framework Flutter.
+// ________________________________________________
+// ________________________________________________
 class MovieList extends StatefulWidget {
   @override
   _MovieListState createState() => _MovieListState();
 }
-
+// Program diatas adalah sebuah class yang meng-extend (menurunkan) kelas StatefulWidget di dalam framework Flutter. StatefulWidget adalah kelas yang digunakan ketika sebuah widget membutuhkan perubahan pada state-nya selama berjalannya aplikasi.
+// ________________________________________________
 class _MovieListState extends State<MovieList> {
   final List<Map<String, dynamic>> _movies = [
     {
@@ -143,7 +146,9 @@ class _MovieListState extends State<MovieList> {
       ]
     },
   ];
-
+  // Program di atas adalah sebuah class _MovieListState yang merupakan state dari sebuah widget bernama MovieList. Class ini memiliki sebuah variabel final berupa List<Map<String, dynamic>> bernama _movies yang berisi data tentang beberapa film beserta detailnya seperti judul, poster, rating, deskripsi, trailer, dan review. Setiap data tentang film tersebut berbentuk map dengan key berupa string yang merepresentasikan detail film tersebut. Class _MovieListState digunakan untuk mengelola state dari widget MovieList.
+// _________________________________________________________________________________________
+// _________________________________________________________________________________________
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -212,7 +217,8 @@ class _MovieListState extends State<MovieList> {
     );
   }
 }
-
+// Program ini adalah kode dari sebuah widget yang menghasilkan tampilan daftar film. Widget ini menggunakan framework Flutter, dan merupakan bagian dari sebuah aplikasi yang berfungsi sebagai katalog film. Kode ini menunjukkan sebuah method bernama build yang dianotasi dengan @override. Anotasi @override digunakan untuk menunjukkan bahwa method ini adalah pengganti dari method dengan nama yang sama yang telah didefinisikan pada kelas induk atau superclass. Dalam kasus ini, kelas induknya adalah kelas StatelessWidget atau StatefulWidget.
+// __________________________________________
 class MovieDetail extends StatefulWidget {
   final Map<String, dynamic> movie;
 
