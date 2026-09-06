@@ -1,16 +1,50 @@
-# uts
+# 🎬 Movie List Flutter
 
-A new Flutter project.
+Aplikasi Flutter sederhana untuk browsing dan menampilkan daftar film dari API.
 
-## Getting Started
+## 📱 Fitur
 
-This project is a starting point for a Flutter application.
+- 🎥 **Movie Browsing** - Lihat daftar film terbaru
+- 🔍 **Search** - Cari film berdasarkan judul
+- ⭐ **Rating** - Lihat rating dan detail film
+- 🎨 **Clean UI** - Interface yang user-friendly
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Tech Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Framework**: Flutter
+- **Language**: Dart
+- **API**: Movie Database API
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 Instalasi
+
+```bash
+git clone https://github.com/Triyan31/movielist_Flutter.git
+cd movielist_Flutter
+flutter pub get
+flutter run
+```
+
+## 📖 Struktur Project
+
+```
+lib/
+├── screens/       # UI Screens
+├── models/        # Data models
+├── services/      # API services
+└── main.dart      # Entry point
+```
+
+## 🎯 Fitur Rencana
+
+- [ ] Favorite movies
+- [ ] Movie details page
+- [ ] Filter by genre
+- [ ] Local storage
+
+## 🤝 Kontribusi
+
+Silakan fork dan submit pull request untuk improvement!
+
+---
+
+Made with ❤️ by Triyan31
